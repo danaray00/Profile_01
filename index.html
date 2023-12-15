@@ -23,19 +23,26 @@
     <!--css, js파일연결 defer은 html문서를 먼저 읽도록 하는 명령어-->
     <link href="./CSS/style.css" type="text/css" rel="stylesheet">
     <link href="./CSS/main_home.css" type="text/css" rel="stylesheet">
+    <link href="./CSS/common.css" type="text/css" rel="stylesheet">
+    <link href="./CSS/about.css" type="text/css" rel="stylesheet">
+    <link href="./CSS/skills.css" type="text/css" rel="stylesheet">
     <script src="./JS/main.js" defer>
     </script>
 
 
     <!--아이콘 적용-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
 
 </head>
 <body>
         <!--Header 시작-->
         <header class="header">
             <div class="header_logo">
-                <img class="header_logo_img" src="./Images/favixon.ico" alt="logo" width="34"/>
+                <img class="header_logo_img" src="./Images/favixon.ico" alt="logo" width="34"/> 
                 <h1 class="header_logo_title">
                     <a href="#">DaEun</a>
                 </h1>
@@ -73,34 +80,167 @@
             </section>
 
             <!--About 시작-->
-            <section>
-                본인 소개
+            <section id ="about" class="section_style max-container">
+                <h2> About me </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. In sint, officia
+                    nesciunt possimus accusantium quo.
+                    Laboriosam, nisi blanditiis qui quo illo
+                    soluta quod deleniti similique non pariatur
+                    in hic. Ullam.
+                </p>
+                <ul class="about_content">
+                    <li class="about_box">
+                        <div class="about_icon">
+                            <span class="material-symbols-outlined" style="font-size: 4rem;">
+                                captive_portal
+                            </span>
+                        </div>
+
+                        <p class="about_title"> Front-end </p>
+                        <p class="about_text"> HTML, CSS JavaScript, TypeScript, React</p>
+                    </li>
+                    <li class="about_box">
+                        <div class="about_icon">
+                            <span class="material-symbols-outlined" style="font-size: 4rem;">
+                                devices
+                            </span>
+                        </div>
+
+                        <p class="about_title"> Design </p>
+                        <p class="about_text"> Photoshop, Illust, Figma</p>
+                    </li>
+
+                    <li class="about_box">
+                        <div class="about_icon">
+                            <span class="material-symbols-outlined" style="font-size: 4rem;">
+                                group
+                            </span>
+                        </div>
+                        <p class="about_title"> Web 관련 외 </p>
+                        <p class="about_text"> Marketing, Language, etc</p>
+                    </li>
+                </ul>
             </section>
 
             <!--Skill 시작-->
-            <section>
-                본인 스킬 소개
+            <section id="skills" class="section_style">
+                <h2> My Skills</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. In sint, officia
+                    nesciunt possimus accusantium quo.
+                    Laboriosam, nisi blanditiis qui quo illo
+                    soluta quod deleniti similique non pariatur
+                    in hic. Ullam.
+                </p>
+
+                <div class="skills_content">
+                    <section class="skills_coding">
+                        <h3 class="skills_title"> Coding Skills(box 01)</h3>
+                        <ul>
+                            <li class="skills_bar">
+                                <div class="bar_text">
+                                    <span> HTML5 </span>
+                                    <span> 98% </span>
+                                </div>
+                                <div class="bar_bg">
+                                    <div class="bar_value" style="width:98%"></div>
+                                </div>
+                            </li>
+                            <li class="skills_bar">
+                                <div class="bar_text">
+                                    <span> CSS</span>
+                                    <span> 90% </span>
+                                </div>
+                                <div class="bar_bg">
+                                    <div class="bar_value" style="width: 90%"></div>
+                                </div>
+                                </li>
+                            <li class="skills_bar">
+                                <div class="bar_text">
+                                    <span> JavaScript </span>
+                                    <span> 80% </span>
+                                </div> 
+                                <div class="bar_bg">
+                                    <div class="bar_value" style="width: 80%"></div>
+                                </div>
+                            </li>
+                            <li class="skills_bar">
+                                <div class="bar_text">
+                                    <span> React </span>
+                                    <span> 76% </span>
+                                </div> 
+                                <div class="bar_bg">
+                                    <div class="bar_value" style="width: 76%"></div>
+                                </div>
+                            </li>
+                        </section>
+
+                    <section class="skills_tools">
+                        <h3 class="skills_title"> Design(box 02)</h3>
+                        <ul>
+                            <li> Photoshop </li>
+                            <li> Illust </li>
+                            <li> Figma </li>
+                            <li> Etc </li>
+                        </ul>
+                    </section>
+                    <section class="skills_etc">
+                        <h3 class="skills_title"> Etc(box 03)</h3>
+                        <ul>
+                            <li> Piano </li>
+                            <li> Sport </li>
+                            <li> Running </li>
+                        </ul>
+                    </section>
+                </div>
             </section>
 
             <!--Work 시작-->
-            <section>
-                이전에 제작했던 콘텐츠 소개
+            <section id="work" class="section_style">
+                <h2> My Work</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. In sint, officia
+                    nesciunt possimus accusantium quo.
+                    Laboriosam, nisi blanditiis qui quo illo
+                    soluta quod deleniti similique non pariatur
+                    in hic. Ullam.
+                </p>
             </section>
 
             <!--테스티모니올스(Testimonuals)시작-->
-            <section>
-                주변 지인의 추천서
+            <section id="Testimonial" class="section_style">
+                <h2> Testimonial</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. In sint, officia
+                    nesciunt possimus accusantium quo.
+                    Laboriosam, nisi blanditiis qui quo illo
+                    soluta quod deleniti similique non pariatur
+                    in hic. Ullam.
+                </p>
             </section>
 
             <!--Top 버튼-->
-            <section>
+            <aside>
                 top버튼
-            </section>
+            </aside>
         </main>
 
         <!--footer 시작-->
-        <footer>
-            footer 시작
+        <footer id="contact" class="section_style">
+            <h2> Contact</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. In sint, officia
+                nesciunt possimus accusantium quo.
+                Laboriosam, nisi blanditiis qui quo illo
+                soluta quod deleniti similique non pariatur
+                in hic. Ullam.
+            </p>
         </footer>
 </body>
 </html>
