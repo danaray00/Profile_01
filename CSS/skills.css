@@ -55,3 +55,22 @@
                 height: 3px;
                 background-color: var(--color-accent);
             }
+
+/*text처리*/
+
+.skills_title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.bar_text_02{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
