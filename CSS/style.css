@@ -61,7 +61,7 @@ a{
     display: flex;
     align-items: center;
     gap:8px;    
-    width: 20%;
+
 }
     .header_log_img{
         width: 34px;
@@ -69,6 +69,10 @@ a{
     }
     .header_logo_title{
         font-size: 1.8rem;
+    }
+    .header_nav{
+        display: flex;
+        justify-content: flex-end;
     }
 
     .header_menu{
@@ -84,7 +88,7 @@ a{
         .header_menu_item:hover{
             border-bottom: 1px solid var(--color-accent);
         }
-
+        roboto
         .header_menu_item.active{
             border: 1px solid var(--color-accent);
             border-radius: 4px;
