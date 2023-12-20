@@ -46,8 +46,10 @@
 
     /*about 부분*/
     .about_content{
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .about_box{
         width: 100%;
@@ -61,18 +63,24 @@
         grid-template-columns: 1fr;
         margin:2rem auto;
         grid-template-areas:
-        "a"
-        "b"
-        "c"
+        "aa"
+        "bb"
+        "cc"
         ;
     }
     .skills_coding{
-        grid-area: a;
+        grid-area: aa;
         padding:1rem;
         background-color: var(--color-primary);
     }
     .skills_tools{
-        grid-area: b;
+        grid-area: bb;
+        padding: 1rem;
+        background-color: var(--color-primary);
+        filter:brightness(150%);
+    }
+    .skills_etc{
+        grid-area: cc;
         padding: 1rem;
         background-color: var(--color-primary);
         filter:brightness(120%);
@@ -81,8 +89,9 @@
     /*MY Work*/
     .category{
         display: flex;
-        flex-direction: colum;
+        flex-direction: column nowrap;
         justify-content: center;
+        align-items: center;
     }
     .category_button{
         width: 100%;
@@ -92,14 +101,14 @@
     .project_all{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         gap:1rem;
     }
 
     /*Testimonial*/
     .testimonial_each{
         display: flex;
-        flex-direction: column;
+        flex-flow: column nowrap;
     }
     .testimonial_each:nth-child(even) .tetimonial_img{
         order:0;
@@ -107,6 +116,7 @@
 
     /*Top 버튼*/
     .arrow_up{
+        display: fixed;
         right:1rem;
         bottom:1rem;
         transform: scale(0.8);
