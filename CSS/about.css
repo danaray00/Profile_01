@@ -3,6 +3,17 @@
     justify-content: space-between;
     gap:1rem;
     margin:2.5rem 0;
+    opacity: 0%;
+    transition: all 2s;
+}
+
+.content_scroll{
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+    margin:2.5rem 0;
+    opacity: 100%;
+    transition: all 2s;
 }
 .max-container{
     max-width: 1200px;
