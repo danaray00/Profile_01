@@ -26,8 +26,7 @@ document.addEventListener("scroll",function(){
         about_content.classList.add("content_scroll");
     }
     else{
-        about_content.classList.remove("content_scroll");
+        about_content.classList.x("content_scroll");
     }
-
 }
 )
