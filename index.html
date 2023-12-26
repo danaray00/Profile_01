@@ -31,9 +31,14 @@
     <link href="./CSS/top.css" type="text/css" rel="stylesheet">
     <link href="./CSS/footer.css" type="text/css" rel="stylesheet">
     <link href="./CSS/media_768.css" type="text/css" rel="stylesheet">
+
     <script type="module" src="./JS/main.js" defer></script>
     <script type="module" src="./JS/main_01.js" defer></script>
     <script type="module" src="./JS/main_02.js" defer></script>
+    <script type="module" src="./JS/main_03.js" defer></script>
+    <script type="module" src="./JS/main_04.js" defer></script>
+    <script type="module" src="./JS/main_05.js" defer></script>
+
 
 
 
@@ -71,7 +76,7 @@
                 <span class="material-symbols-outlined">
                     menu
                 </span>
-                </div>
+            </div>
         </header>
 
         <!--main 시작-->
@@ -213,14 +218,22 @@
                 <h2 class="title"> My Work</h2>
                 <p class="description"> Projects</p>
                 <ul class="category">
-                    <li><button class="category_button category_selected"> All <span class="work_count"> 8 </span> </button> </li>
-                    <li><button class="category_button"> Front-end <span class="work_count"> 3 </span> </button> </li>
-                    <li><button class="category_button"> Design <span class="work_count"> 3 </span> </button> </li>
-                    <li><button class="category_button"> Mobile <span class="work_count"> 2 </span> </button> </li>
+                    <li><button class="category_button category_selected" data-category="all">
+                        All 
+                        <span class="work_count"> 8 </span> </button> </li>
+                    <li><button class="category_button" data-category="front-end">
+                        Front-end
+                        <span class="work_count"> 3 </span> </button> </li>
+                    <li><button class="category_button" data-category="design">
+                        Design
+                        <span class="work_count"> 3 </span> </button> </li>
+                    <li><button class="category_button" data-category="mobile">
+                        Mobile
+                        <span class="work_count"> 2 </span> </button> </li>
                 </ul>
                 <!--1번째 사진-->
                 <ul class="project_all">
-                    <li class="project">
+                    <li class="project" data-type="front-end">
                         <a href="#" target="_blank">
                             <img src="./Images/project_01.png" alt="project_01 이미지" class="project_img"/>
                             <div class="project_text">
@@ -230,7 +243,7 @@
                         </a>
                     </li>
 
-                    <li class="project">
+                    <li class="project" data-type="front-end">
                         <a href="#" target="_blank">
                             <img src="./Images/project_02.png" alt="project_02 이미지" class="project_img"/>
                             <div class="project_text">
@@ -240,7 +253,7 @@
                         </a>
                     </li>
 
-                    <li class="project">
+                    <li class="project" data-type="front-end">
                         <a href="#" target="_blank">
                             <img src="./Images/project_03.png" alt="project_03 이미지" class="project_img"/>
                             <div class="project_text">
@@ -250,7 +263,7 @@
                         </a>
                     </li>
 
-                    <li class="project">
+                    <li class="project" data-type="design">
                         <a href="#" target="_blank">
                             <img src="./Images/project_04.png" alt="project_04 이미지" class="project_img"/>
                             <div class="project_text">
@@ -260,7 +273,7 @@
                         </a>
                     </li>
 
-                    <li class="project">
+                    <li class="project" data-type="design">
                         <a href="#" target="_blank">
                             <img src="./Images/project_05.png" alt="project_05 이미지" class="project_img"/>
                             <div class="project_text">
@@ -270,7 +283,7 @@
                         </a>
                     </li>
 
-                    <li class="project">
+                    <li class="project" data-type="design">
                         <a href="#" target="_blank">
                             <img src="./Images/project_06.png" alt="project_06 이미지" class="project_img"/>
                             <div class="project_text">
@@ -280,7 +293,7 @@
                         </a>
                     </li>
 
-                    <li class="project">
+                    <li class="project" data-type="mobile">
                         <a href="#" target="_blank">
                             <img src="./Images/project_07.png" alt="project_07 이미지" class="project_img"/>
                             <div class="project_text">
@@ -290,7 +303,7 @@
                         </a>
                     </li>
 
-                    <li class="project">
+                    <li class="project" data-type="mobile">
                         <a href="#" target="_blank">
                             <img src="./Images/project_08.png" alt="project_08 이미지" class="project_img"/>
                             <div class="project_text">
