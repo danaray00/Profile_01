@@ -33,6 +33,12 @@
             }
             .header_menu.open{/*자바스크립트에서 사용예정*/
                 display: flex;
+                flex-flow: column nowrap;
+                width: 100%;
+                background: transparent;
+                text-align: center;
+                padding: 1rem 4rem;
+                gap: 1rem;
             }
             .hamburger{
                 display: block;
@@ -89,9 +95,9 @@
     /*MY Work*/
     .category{
         display: flex;
-        flex-direction: column nowrap;
+        flex-flow: column nowrap;
         justify-content: center;
-        align-items: center;
+        background: transparent;
     }
     .category_button{
         width: 100%;
@@ -102,7 +108,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        gap:1rem;
+        gap: 1rem;
     }
 
     /*Testimonial*/
